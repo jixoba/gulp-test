@@ -9,8 +9,11 @@ body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, fo
     a:hover { text-decoration:underline; } 
     sup { vertical-align:text-top; } 
     sub{ vertical-align:text-bottom; } 
-    legend { color:#000; } 
+    legend { color:#000ccc; } 
     fieldset, img { border:0; } 
     button, input, select, textarea { font-size:100%; } 
     table { border-collapse:collapse; border-spacing:0; }
     td { column-rule-style: dotted;}
+    .div1 {
+        color: blue;
+    }

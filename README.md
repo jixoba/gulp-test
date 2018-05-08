@@ -8,7 +8,16 @@
 ### 运行项目
 ### CLI命令
 ```
-gulp
+npm start
+开启开发环境调试模式，服务根目录src/
+```
+```
+npm run pro
+开启生产环境调试模式，服务根目录build/themes/simplicity
+```
+```
+npm run build
+在build文件夹下生成打包后的文件
 ```
 ### build文件夹下的文件是压缩优化过的文件
 ### 代码目录结构
