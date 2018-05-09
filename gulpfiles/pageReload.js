@@ -6,9 +6,14 @@
 var gulp =require('gulp'),                                      //引入gulp模块
     connect = require('gulp-connect'),                          //引入服务器功能模块  
     pathConfig = require('./pathConfig');                       //引入路径定义文件
-var INPATH = pathConfig.pageReload;
+var INPATH = pathConfig.pageReload;                             //输入路径
+
+/**
+ * @desc 此任务用于浏览器刷新
+ * @name pageReload  
+ */
 gulp.task('pageReload',function(){
-    gulp.src(INPATH)
-        .pipe(connect.reload());              //重启浏览器  
+    return gulp.src(INPATH)
+            .pipe(connect.reload());                            //重启浏览器  
                                         
 });

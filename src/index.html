@@ -10,17 +10,21 @@
     <link rel="stylesheet" href="css/less1.css">
     <link rel="stylesheet" href="css/lib/style.css">
     <!-- endbuild -->
-   
+   <style>
+       i,em,strong {
+           font-style: normal;
+       }
+   </style>
 </head>
 <body>
-    <div class="div1">123456
-        <span>哈呵呵</span>
+    <div class="div1">12345
+        <a href="/page/index2.html">跳转</a>
     </div>
     <div class="wrap">
         <header></header>
         <ul>
             <li>
-                <img src="./images/1.jpg" alt="image">
+                <img src="./images/1.png" alt="image">
             </li>
             <li>
                 <img src="./images/2.jpg" alt="image">
@@ -39,6 +43,11 @@
             </li>
         </ul>
     </div>
+    <script>
+        function fn1(){
+            console.log(123);
+        }
+    </script>
 </body>
 <!-- build:js scripts/script.js -->
 <script src="js/lib/jquery1.12.4.js"></script>

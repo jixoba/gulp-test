@@ -6,10 +6,19 @@ var gulp =require('gulp'),                                      //引入gulp模�
     connect = require('gulp-connect'),                          //引入服务器功能模块  
     pathConfig = require('./pathConfig');                       //引入路径定义文件
     require('require-dir')('../gulpfiles');                     //引入gulpfiles中的任务  
-var WATCHPATH = pathConfig.autoRefresh;
+var WATCHPATH = pathConfig.autoRefresh;                         //监视的代码路径
+/**
+ * @desc 此刷新浏览器任务用于生产环境下的server启动，发现所监视的代码变化后，执行build任务
+ * @name "autoRefreshPro"
+ */
 gulp.task('autoRefreshPro',function(){
-    gulp.watch(WATCHPATH, ['build']);                           //当src下的文件变化时执行build任务
+    gulp.watch(WATCHPATH, ['build']);                           
 });
+
+/**
+ * @desc 此刷新浏览器任务用于测试环境下的server启动，发现所监视的代码变化后，执行pageReload任务
+ * @name "autoRefreshDev"
+ */
 gulp.task('autoRefreshDev',function(){
     gulp.watch(WATCHPATH, ['pageReload'])                                
 });

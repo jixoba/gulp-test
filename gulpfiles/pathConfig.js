@@ -11,38 +11,39 @@
  * @property {Array} pageReload任务路径
  */
 const pathObj = {
-    main: {                             // main任务路径
-        inPath: './src/*.html',         //输入流     
-        outPath: 'build/themes/simplicity'                //输出流
+    main: {                                                             //main任务
+        inPath: ['./src/*.html','./src/page/*.html'],                   //输入路径     
+        base: 'src',                                                    //根路径
+        outPath: 'build/themes/simplicity'                              //输出路径
     },   
-    server: {                           //
-        rootPathDev: './src',
-        rootPathPro: './build/themes/simplicity',
-        port: 8080
+    server: {                                                           //server任务
+        rootPathDev: './src',                                           //开发环境服务的根路径
+        rootPathPro: './build/themes/simplicity',                       //生产环境服务的根路径
+        port: 8080                                                      //服务的端口号            
     },
-    autoRefresh: ['src/*.html','src/**/**/*'], // autoRefresh任务路径
-    clean: {
-        delPath: 'build',
+    autoRefresh: ['src/*.html','src/**/**/*'],                          //autoRefresh任务输入路径
+    clean: {                                                            //clean任务
+        delPath: 'build',                                               //清除所有打包后的文件路径
         delPathScript: ['build/scripts', 'build/maps'],
         delPathCss: 'build/css'
     },
-    copyImages: {
-        inPath: 'src/**/*.{jpg,png,gif}',       //输入流 
-        base: 'src',
-        outPath: 'build/themes/simplicity'                        //输出流
+    copyImages: {                                                       //copyImages任务
+        inPath: 'src/**/*.{jpg,png,gif}',                               //输入路径 
+        base: 'src',                                                    //根路径
+        outPath: 'build/themes/simplicity'                              //输出路径
     },
-    htmlMin: {
-        inPath: 'build/themes/simplicity/*.html',                 //输入流     
-        outPath: 'build/themes/simplicity'                        //输出流
+    htmlMin: {                                                          //htmlMin任务
+        inPath: 'build/themes/simplicity/*.html',                       //输入路径     
+        outPath: 'build/themes/simplicity'                              //输出路径
     },
-    less: {
-        inPath: 'src/css/less/*.less',          //输入流     
-        outPath: 'src/css'                      //输出流
+    less: {                                                             //less任务
+        inPath: 'src/css/less/*.less',                                  //输入路径     
+        outPath: 'src/css'                                              //输出路径
     },
-    sass: {
-        inPath: 'src/css/sass/*.scss',          //输入流     
-        outPath: 'src/css'                      //输出流
+    sass: {                                                             //sass任务
+        inPath: 'src/css/sass/*.scss',                                  //输入路径     
+        outPath: 'src/css'                                              //输出路径
     },
-    pageReload: ['src/*.html'],
+    pageReload: ['src/*.html'],                                         //pageReload任务输入路径        
 }
 module.exports = pathObj;
