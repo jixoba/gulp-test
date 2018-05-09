@@ -22,7 +22,7 @@ var INPATH = pathConfig.copyImages.inPath,                      //图片引入�
  * @desc 此任务是对图片进行优化压缩，压缩前依赖clean任务，删除文件 
  * @name copyImages
  */
-gulp.task('copyImages', ['clean'], function () {
+gulp.task('copyImages', function () {
     return gulp.src(INPATH,{base: BASE})                        //图片的输入路径
          .pipe(imagemin([
             imagemin.gifsicle({interlaced: BGIF}),              //是否对gif格式图片进行优化

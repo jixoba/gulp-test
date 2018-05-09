@@ -17,7 +17,9 @@ gulp.task('dev',['serverDev','autoRefreshDev']);
  */            
 gulp.task('pro',['serverPro','autoRefreshPro']);
 /**
- * @desc 此任务依赖htmlMin这个任务，对项目进行打包，保存在build/下
+ * @desc 此任务依赖clean这个任务，之后执行htmlMin任务，对项目进行打包，保存在build/下
  * @name "build"
  */            
-gulp.task('build',['htmlMin']);                             
+gulp.task('build',['clean'],function(){
+    gulp.run('htmlMin');
+});                             

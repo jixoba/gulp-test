@@ -3,7 +3,6 @@
  * @param {Array} WATCHPATH 
  */
 var gulp =require('gulp'),                                      //引入gulp模块
-    connect = require('gulp-connect'),                          //引入服务器功能模块  
     pathConfig = require('./pathConfig');                       //引入路径定义文件
     require('require-dir')('../gulpfiles');                     //引入gulpfiles中的任务  
 var WATCHPATH = pathConfig.autoRefresh;                         //监视的代码路径
@@ -20,5 +19,5 @@ gulp.task('autoRefreshPro',function(){
  * @name "autoRefreshDev"
  */
 gulp.task('autoRefreshDev',function(){
-    gulp.watch(WATCHPATH, ['pageReload'])                                
+    gulp.watch(WATCHPATH, ['pageReloadDev'])                                
 });
