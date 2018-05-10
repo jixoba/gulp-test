@@ -6,8 +6,8 @@
 var gulp =require('gulp'),                                          //引入gulp模块
     sass = require('gulp-sass'),                                    //引入sass模块
     pathConfig = require('./pathConfig');                           //引入路径定义文件            
-var INPATH = pathConfig.less.inPath,                                //输入的sass文件路径
-    OUTPATH = pathConfig.less.outPath;                              //输出的css文件路径
+var INPATH = pathConfig.sass.inPath,                                //输入的sass文件路径
+    OUTPATH = pathConfig.sass.outPath;                              //输出的css文件路径
     
 /**
  * @desc 此任务是将sass文件转为css文件

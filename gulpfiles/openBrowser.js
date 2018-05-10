@@ -3,7 +3,7 @@
  * @param {String} URL
  */
 var gulp = require('gulp'),                                     //引入gulp模块
-    opn = require('opn');
+    opn = require('opn');                                       //引入打开浏览器模块
     pathConfig = require('./pathConfig');                       //引入路径定义文件 
 var URL = pathConfig.openBrowser;
 
