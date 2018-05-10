@@ -17,13 +17,3 @@ gulp.task('pageReload',function(){
             .pipe(connect.reload());                            //重启浏览器  
                                         
 });
-
-/**
- * @desc 此任务用于调试环境下浏览器刷新,依赖less2css，sass2css两个任务
- * @name pageReload  
- */
-gulp.task('pageReloadDev',['less2css','sass2css'],function(){
-    return gulp.src(INPATH)
-            .pipe(connect.reload());                            //重启浏览器  
-                                        
-});

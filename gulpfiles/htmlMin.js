@@ -19,7 +19,7 @@ var INPATH = pathConfig.htmlMin.inPath,                                 //输入
  * @desc 此任务对.html格式的文件进行压缩处理，依赖任务main
  * @name htmlMin
  */
-gulp.task('htmlMin', ['main'], function(){
+gulp.task('htmlMin', function(){
     return gulp.src(INPATH)                                             //输入的.html文件路径
         .pipe(htmlmin({
             collapseWhitespace: COLLAPSEWHITESPACE,                     //去除空格压缩

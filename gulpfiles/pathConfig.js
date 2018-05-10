@@ -9,6 +9,7 @@
  * @property {Object} less任务路径 
  * @property {Object} sass任务路径
  * @property {Array} pageReload任务路径
+ * @property {String} openBrowser任务路径
  */
 const pathObj = {
     main: {                                                             //main任务
@@ -44,6 +45,7 @@ const pathObj = {
         inPath: 'src/css/sass/*.scss',                                  //输入路径     
         outPath: 'src/css'                                              //输出路径
     },
-    pageReload: ['src/*.html'],                                         //pageReload任务输入路径        
+    pageReload: ['src/*.html'],                                         //pageReload任务输入路径  
+    openBrowser: 'http://localhost:8080',                               //openBrowser任务打开浏览器路径
 }
 module.exports = pathObj;

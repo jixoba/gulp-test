@@ -25,7 +25,7 @@ var INPATH = pathConfig.main.inPath,                                            
  * @desc 此任务依赖 less2css，sass2css，copyImages三个任务，之后加载html页面，对页面里引入的js与css进行合并，压缩，添加md5文件名后缀，生成sourceMaps文件
  * @name "main"
  */
-gulp.task('main', ['less2css', 'sass2css', 'copyImages'] ,function () {
+gulp.task('main', function () {
     return gulp.src(INPATH,{base: BASE})
         .pipe(useref({}, lazypipe().pipe(sourcemaps.init, { loadMaps: true }))) //sourceMaps文件初始化
         .pipe(gulpif('*.js', babel({presets: ['es2015']})))                     //es6转es5

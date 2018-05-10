@@ -1,4 +1,18 @@
 ## gulp-htmlmin参数说明
 | Option                         | Description     | Default |
 |--------------------------------|-----------------|---------|
-| gifsicle({interlaced: true}) | 设为true时，优化gif格式图片 | `false` |
+| removeComments | 清除html注释 | `false` |
+| collapseWhitespace | 压缩html | `false` |
+| minifyCSS | 压缩页面CSS | `false` |
+| minifyJS | 压缩页面JS | `false` |
+
+#### example 如下:
+```
+…
+.pipe(htmlmin({
+    collapseWhitespace: true,                     
+    minifyCSS: true,                                        
+    minifyJS: true                                         
+}))  
+…
+```
