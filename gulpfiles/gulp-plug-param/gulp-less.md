@@ -1,8 +1,8 @@
 ## gulp-less参数说明
-| Option                         | Description     | Default |
-|--------------------------------|-----------------|---------|
-| paths | 引入的less文件路径 | `Array` |
-| plugins | less的插件 | `Array` |
+| Option                         | Description     | Type | Default |
+|--------------------------------|-----------------|------|---------|
+| paths | 引入的less文件路径 | array | [] |
+| plugins | less的插件 | array | [] |
 #### example 如下：
 ```
 …

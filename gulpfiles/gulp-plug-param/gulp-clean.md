@@ -1,7 +1,7 @@
 ## gulp-clean参数说明
-| Option                         | Description     | Default |
-|--------------------------------|-----------------|---------|
-| force | 设为true时，可以删除当前gulp工作目录以外的文件 | `false` |
+| Option                         | Description     | Type | Default |
+|--------------------------------|-----------------|------|---------|
+| force | 设为true时，可以删除当前gulp工作目录以外的文件 | boolean | `false` |
 #### example 如下：
 ```
     gulp.task('default', function () {

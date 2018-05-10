@@ -1,10 +1,10 @@
 ## gulp-htmlmin参数说明
-| Option                         | Description     | Default |
-|--------------------------------|-----------------|---------|
-| removeComments | 清除html注释 | `false` |
-| collapseWhitespace | 压缩html | `false` |
-| minifyCSS | 压缩页面CSS | `false` |
-| minifyJS | 压缩页面JS | `false` |
+| Option                         | Description     | Type | Default |
+|--------------------------------|-----------------|------|---------|
+| removeComments | 清除html注释 | boolean | `false` |
+| collapseWhitespace | 压缩html | boolean |`false` |
+| minifyCSS | 压缩页面CSS | boolean | `false` |
+| minifyJS | 压缩页面JS | boolean |`false` |
 
 #### example 如下:
 ```
