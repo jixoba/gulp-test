@@ -52,6 +52,18 @@ const pathObj = {
         base: 'src',                                                    //base路径
         outPath: 'build/themes/simplicity/js',                          //输出路径
         fileName: 'app.min.js'                                          //输出文件夹名称
-    }
+    },
+    cleanCss: {                                                         //cleanCss任务
+        inPath: 'src/css/**/*.css',                                     //输入路径
+        base: 'src',                                                    //base路径
+        outPath: 'build/themes/simplicity/css',                         //输出路径
+        fileName: 'app.min.css'                                         //输出文件夹名称
+    },
+    postCss: {                                                          //postCss任务        
+        inPath: 'src/css/**/*.css',                                     //输入路径
+        base: 'src',                                                    //base路径
+        outPath: 'build/themes/simplicity',                         //输出路径
+        fileName: 'app.min.css'                                         //输出文件夹名称
+    },
 }
 module.exports = pathObj;
