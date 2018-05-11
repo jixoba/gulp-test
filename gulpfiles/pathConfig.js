@@ -34,7 +34,7 @@ const pathObj = {
         outPath: 'build/themes/simplicity'                              //输出路径
     },
     htmlMin: {                                                          //htmlMin任务
-        inPath: 'build/themes/simplicity/*.html',                       //输入路径     
+        inPath: 'build/themes/simplicity/**/*.html',                       //输入路径     
         outPath: 'build/themes/simplicity'                              //输出路径
     },
     less: {                                                             //less任务
@@ -47,5 +47,11 @@ const pathObj = {
     },
     pageReload: ['src/*.html'],                                         //pageReload任务输入路径  
     openBrowser: 'http://localhost:8080',                               //openBrowser任务打开浏览器路径
+    uglifyJs: {                                                         //uglifyJs任务     
+        inPath: 'src/js/**/*.js',                                       //输入路径
+        base: 'src',                                                    //base路径
+        outPath: 'build/themes/simplicity/js',                          //输出路径
+        fileName: 'app.min.js'                                          //输出文件夹名称
+    }
 }
 module.exports = pathObj;
