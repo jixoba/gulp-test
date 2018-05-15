@@ -4,6 +4,7 @@
  */
 var gulp =require('gulp'),                                  //引入gulp模块
     gulpSequence = require('gulp-sequence');                //引入任务执行顺序模块
+    require('./gulpfiles/uglifyJs');
     require('require-dir')('./gulpfiles');                  //引入gulpfiles中的任务  
 
 /**
@@ -22,3 +23,8 @@ gulp.task('pro',gulpSequence('serverPro','openBrowser','autoRefreshPro'));
  * @name "build"
  */            
 gulp.task('build', gulpSequence('clean',['less2css', 'sass2css', 'copyImages'],'main','htmlMin'));                             
+/**
+ * @desc
+ * @name
+ */
+gulp.task('build2', gulpSequence('clean',['less2css', 'sass2css', 'copyImages'],['jsGroupLib','jsGroupStatic','cleanCssLib','cleanCssStatic','htmlMinGroup']));                             

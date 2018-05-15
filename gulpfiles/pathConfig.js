@@ -37,6 +37,10 @@ const pathObj = {
         inPath: 'build/themes/simplicity/**/*.html',                       //输入路径     
         outPath: 'build/themes/simplicity'                              //输出路径
     },
+    htmlMinTep: {                                                       ////htmlMinTep任务
+        inPath: 'src/index_template.html',                              //输入路径     
+        outPath: 'build/themes/simplicity'                              //输出路径
+    },
     less: {                                                             //less任务
         inPath: 'src/css/less/*.less',                                  //输入路径     
         outPath: 'src/css'                                              //输出路径
@@ -62,8 +66,47 @@ const pathObj = {
     postCss: {                                                          //postCss任务        
         inPath: 'src/css/**/*.css',                                     //输入路径
         base: 'src',                                                    //base路径
-        outPath: 'build/themes/simplicity',                         //输出路径
+        outPath: 'build/themes/simplicity',                             //输出路径
         fileName: 'app.min.css'                                         //输出文件夹名称
+    },
+    buildGroup: {
+        html: {
+            inPath: 'src/index.html',
+            outPath: 'build/themes/simplicity',
+            fileName: 'index.html'
+        },
+        lib: {
+            css: {
+                inPath: 'src/css/lib/*.css',
+                base: 'src',                
+                outPath: 'build/themes/simplicity/css',
+                fileName: 'app.min.css',
+                linkPath: 'css'
+            },
+            js: {
+                inPath: 'src/js/lib/*.js',
+                base: 'src',
+                outPath: 'build/themes/simplicity',
+                fileName: 'app.min.js',
+                srcPath: 'js'              
+            }
+        },
+        static:  {
+            css: {
+                inPath: 'src/css/*.css',
+                base: 'src',                
+                outPath: 'build/themes/simplicity/css',
+                fileName: 'css.min.css',
+                linkPath: 'css'                                
+            },
+            js: {
+                inPath: 'src/js/*.js',
+                base: 'src',                
+                outPath: 'build/themes/simplicity',
+                fileName: 'js.min.js',
+                srcPath: 'js'                                
+            }
+        }
     },
 }
 module.exports = pathObj;

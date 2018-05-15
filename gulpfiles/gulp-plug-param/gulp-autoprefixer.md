@@ -4,7 +4,7 @@
 | cascade | 如果不压缩CSS，会使用视觉级联。 | boolean | true |
 | add | 添加前缀 | boolean | true |
 | remove | 删除过时的前缀 | boolean | true |
-| flexbox | flexbox属性添加前缀 | boolean | true |
+| flexbox | Autoprefixer将为flexbox参数添加前缀，默认值为true。设定值为"no-2009"时，只会为最新版本和IE版本浏览器添加前缀 | boolean | true |
 | grid | ie添加栅格化属性兼容 | boolean | false |
 | browsers | 支持的浏览器列表 | array | false |
 #### browsers list
