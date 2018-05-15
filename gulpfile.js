@@ -25,6 +25,6 @@ gulp.task('pro',gulpSequence('serverPro','openBrowser','autoRefreshPro'));
 gulp.task('build', gulpSequence('clean',['less2css', 'sass2css', 'copyImages'],'main','htmlMin'));                             
 /**
  * @desc
- * @name
+ * @name 'buildGroup'
  */
-gulp.task('build2', gulpSequence('clean',['less2css', 'sass2css', 'copyImages'],['jsGroupLib','jsGroupStatic','cleanCssLib','cleanCssStatic','htmlMinGroup']));                             
+gulp.task('buildGroup', gulpSequence('clean',['less2css', 'sass2css', 'copyImages'],['jsGroupLib','jsGroupStatic','cleanCssLib','cleanCssStatic','htmlMinGroup']));                             
