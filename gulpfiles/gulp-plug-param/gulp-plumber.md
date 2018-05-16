@@ -1,11 +1,10 @@
-## gulp-uglify
-js压缩插件
+## gulp-plumber
+阻止因错误引发的gulp插件退出
 ***
 ### 参数说明
 | 属性                         | 描述     | 类型 | 默认值 |
 |--------------------------------|-----------------|------|---------|
 | none | none | string |none |
-平时使用不需要参数，更多参数请参考[这里](https://github.com/mishoo/UglifyJS2#minify-options)
 ***
 #### example 如下：
 ```

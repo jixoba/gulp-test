@@ -14,7 +14,7 @@ del(['tmp/*.js', '!tmp/unicorn.js']).then(paths => {
 });
 ```
 
-| Option                         | Description     | Type | Default |
+| 属性                         | 描述     | 类型 | 默认值 |
 |--------------------------------|-----------------|------|---------|
 | force | 允许删除当前工作路径以外的文件 | boolean | false |
 | dryRun | 文件和文件夹都删除 | boolean | false |

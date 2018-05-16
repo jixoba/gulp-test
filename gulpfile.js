@@ -24,7 +24,7 @@ gulp.task('pro',gulpSequence('serverPro','openBrowser','autoRefreshPro'));
  */            
 gulp.task('build', gulpSequence('clean',['less2css', 'sass2css', 'copyImages'],'main','htmlMin'));                             
 /**
- * @desc
+ * @desc 根据配置文件按组来合并压缩js，css文件
  * @name 'buildGroup'
  */
 gulp.task('buildGroup', gulpSequence('clean',['less2css', 'sass2css', 'copyImages'],['jsGroupLib','jsGroupStatic','cleanCssLib','cleanCssStatic','htmlMinGroup']));                             
