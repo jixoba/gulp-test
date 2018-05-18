@@ -20,7 +20,8 @@ gulp.task('serverPro',function(){
     connect.server({
         root: ROOTPATH_PRO,                                 //生产调试服务根路径
         port: PORT,                                         //服务的端口号
-        livereload: LIVERELOAD                              //启用实时刷新的功能
+        livereload: LIVERELOAD,                              //启用实时刷新的功能
+        debug: true
     });
 });
 
