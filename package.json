@@ -29,6 +29,8 @@
     "gulp-concat": "^2.6.1",
     "gulp-connect": "^5.5.0",
     "gulp-htmlmin": "^4.0.0",
+    "gulp-iconfont": "^9.1.0",
+    "gulp-iconfont-css": "^2.1.0",
     "gulp-if": "^2.0.2",
     "gulp-imagemin": "^4.1.0",
     "gulp-jshint": "^2.1.0",
