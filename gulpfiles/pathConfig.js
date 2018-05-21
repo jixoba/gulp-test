@@ -69,6 +69,14 @@ const pathObj = {
         outPath: 'build/themes/simplicity',                             //输出路径
         fileName: 'app.min.css'                                         //输出文件夹名称
     },
+    svg2iconfont: {                                                     //svg2iconfont任务
+        inPath: 'src/svg/*.svg',
+        outPath: 'src/fonts',
+        fontName: 'myfont',
+        targetPath: './_icons.css',
+        fontPath: './'
+
+    },
     buildGroup: {
         html: {
             inPath: 'src/index.html',
